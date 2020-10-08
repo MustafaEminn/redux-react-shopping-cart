@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* --- Container --- */
+
+
+.container{
+    grid-template-columns: 1fr 0.3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "left right";
+    grid-gap: 1px;
+    display: flex;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* --- Left --- */
+
+
+.left{
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 1280px;
+    height: auto;
+    border-right: 1px solid gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.left > h2 {
+    position: fixed;
+    height: 40px;
+    margin-top: 105px;
+    margin-left: -30px;
+    font-size: 29px;
+    transform: rotate(-90deg);
 }
 
-.App-link {
-  color: #61dafb;
+
+.product{
+    cursor: pointer;
+    position: relative;
+    height: 500px;
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.image{
+    height: 300px;
+    width: 300px;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+}
+
+.image img{
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.product-name > h1 {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.product-description > p {
+    position: relative;
+    left: 10px;
+    top: 18px;
+
+}
+
+.product-price > h3 {
+    position: relative;
+    left: 10px;
+    top: 58px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.cartaddbutton{
+    position: relative;
+    top: 12px;
+    left: 135px;
+    padding: 8px 26px;
+    font-size: 16px;
+    color: white;
+    background-color: orange;
+    border: none;
+    transition: all 0.3s;
+}
+
+.cartaddbutton:hover{
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* --- Right --- */
+
+
+.right{
+    position: relative;
+    display: inline-flex;
+    width: 30%;
+    min-height: 1280px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right > h2 {
+    position: fixed;
+    height: 40px;
+    margin-top: 105px;
+    margin-left: -5px;
+    font-size: 29px;
+    transform: rotate(-90deg);
+}
+
+
+
+.productcart{
+    cursor: pointer;
+    position: relative;
+    height: 500px;
+    width: 300px;
+    margin-left: 70px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75)
+}
+
+@media screen and (max-width: 1290px){
+    .product{
+        height: 300px;
+        width: 200px;
+        margin-top: -390px;
+    }
+    .product:nth-child(2){
+        margin-top: 30px;
+    }
+    .product:nth-child(3){
+        margin-top: 30px;
+    }
+    .left > h2 {
+        display: none;
+    }
+    .right > h2 {
+        display: none;
+    }
+    .image{
+        height: 200px;
+        width: 200px;
+    }
+    .image > img {
+        height: 200px;
+        width: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    .product-description > p{
+        display: none;
+    }
+    .product-name > h1 {
+        left: 10px;
+        font-size: 19px;
+    }
+    .product-price > h3 {
+        left: 10px;
+        top: 35px;
+        font-size: 17px;
+    }
+    .cartaddbutton{
+        top: 7px;
+        left: 105px;
+        padding: 4px 4px;
+        font-size: 13px;
+    }
+    .productcart{
+        height: 300px;
+        width: 200px;
+    }
 }
