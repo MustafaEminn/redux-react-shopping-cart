@@ -22,7 +22,7 @@ export const data = [
     },
     {
         id: 4,
-        image: "https://img2.pngindir.com/20180315/abe/kisspng-ipod-shuffle-ipod-nano-ipod-classic-media-player-c-ipod-cliparts-5aaaa2ae1580f0.2970505915211322060881.jpg",
+        image: "https://www.incehesap.com/resim/urun/201909/5d84ee864f7e47.57128339_nqhefmpkojlgi_500.jpg",
         name: "iPod",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         price: 200
