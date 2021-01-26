@@ -1,7 +1,7 @@
 # React Redux Shopping Cart
 
-**React, Redux ve CSS kullanarak yapılmıştır.**
+**Used react, redux and css on this project.**
 
-Fotoğraf 1: ![Photo1](https://i.hizliresim.com/b0FVCM.png)
+Photo 1: ![Photo1](https://i.hizliresim.com/b0FVCM.png)
 
-Fotoğraf 2: ![Photo2](https://i.hizliresim.com/1qEeDl.png)
+Photo 2: ![Photo2](https://i.hizliresim.com/1qEeDl.png)
